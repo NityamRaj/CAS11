@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
     <title>Secondhandautos.com</title>
 
     <!-- Font Awesome Icons -->
@@ -105,7 +106,7 @@
         </div>
         <div class="main">
           <form action="#">
-            <div class="left">
+            <div class="left" style="color: black;">
               <label for="name">Name</label>
               <br />
               <label for="company" class="company_label"
@@ -128,18 +129,18 @@
                   type="text"
                   class="name"
                   name="first-name"
-                  placeholder="E.g. Nityam Raj"
+                  placeholder="Your First Name"
                   required
                 />
                 <input
                   type="text"
                   class="name"
                   name="last-name"
-                  placeholder="E.g. Bhartia"
+                  placeholder="Your Last Name"
                   required
                 />
                 <br />
-                <small class="first_name">
+                <small class="first_name" style="color: black;">
                   <label for="first_name">First Name</label>
                 </small>
                 <input
@@ -148,7 +149,7 @@
                   value="hidden"
                   placeholder="empty"
                 />
-                <small class="last_name">
+                <small class="last_name" style="color: black;">
                   <label for="last_name">Last Name</label>
                 </small>
                 <input
@@ -166,7 +167,7 @@
                   type="text"
                   class="general"
                   name="company"
-                  placeholder="E.g. Honda City"
+                  placeholder="Your Car Name"
                 />
                 <br />
                 <label for="name"></label>
@@ -177,7 +178,7 @@
                   type="email"
                   class="general"
                   name="email"
-                  placeholder="abc123@gmail.com"
+                  placeholder="Your Email Address"
                   required
                 />
                 <br />
@@ -200,12 +201,12 @@
                   class="phone_number"
                   name="number"
                   value="number"
-                  placeholder="E.g. 956-6578-9663"
+                  placeholder=" Your Phone Number"
                   min="10"
                   required
                 />
                 <br />
-                <small class="first_code">
+                <small class="first_code" style="color: black;">
                   <label for="area_code">Area Code</label>
                 </small>
                 <input
@@ -214,7 +215,7 @@
                   value="hidden"
                   placeholder="empty"
                 />
-                <small class="last_number">
+                <small class="last_number" style="color: black;">
                   <label for="phone_number">Phone Number</label>
                 </small>
                 <input
@@ -232,7 +233,7 @@
                   type="text"
                   class="general"
                   name="address"
-                  placeholder="E.g. Atur Centre, Gokhale Cross Road, Model Colony, Shivajinagar, Pune, Maharashtra 411016"
+                  placeholder="Enter Your Address"
                   required
                 />
                 <br />
@@ -244,7 +245,7 @@
                   type="text"
                   class="general"
                   name="booking-type"
-                  placeholder="E.g. 2018"
+                  placeholder="E.g. Year"
                   required
                 />
               </div>
